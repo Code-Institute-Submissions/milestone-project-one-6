@@ -1,20 +1,20 @@
 body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 1.5;
     color: #333;
-    background-color: gray;
+    background-color: black;
+    margin-top: 0px;
 }
 
-img {
-    height: 230px;
-    width: 900px;
-}
-
-.center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.logo {
+    background: url("../images/the.beatles.logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 250px;
+    transition: ease-in-out;
+    transition-duration: .5s;
 }
 
 nav ul {
@@ -30,11 +30,64 @@ nav li {
     line-height: 40px;
     height: 40px;
     display: inline-block;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+nav li:hover {
+    background-color: #ffffff;
+    color: #4a4a4f;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
 }
 
 nav a {
     text-decoration: none;
     color: #ffffff;
-    
+}
+
+img {
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-size: contain;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.row {
+    margin: 15px;
+}
+
+.footer {
+    background-color: #4a4a4f;
+    padding: 1px;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 40%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
